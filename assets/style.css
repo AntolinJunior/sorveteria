@@ -1,6 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+
+
+:root{
+    --cor-primaria: #002c2b;
+    --cor-secundaria:#ff3d00;
+    --cor-terciaria: #ffbc11;
+    --cor-quartenaria: #0a837f;
+}
 * {
     padding: 0;
     margin: 0;
@@ -8,29 +16,34 @@
 }
 
 body {
-    background-color: #7d2948 ;
     padding-top: 85px;
     min-height: 0px;
 }
 
-.fixed{
+.fixed {
     z-index: 9999;
     position: fixed;
     top: 0;
     width: 100vw;
 }
+
+
+
+
 .inicio {
     display: flex;
     align-items: center;
     justify-content: space-around;
     padding: 10px;
-    background-color: #3b0032;
+    background-color: var(--cor-terciaria);
     color: #ebeaa9;
     letter-spacing: 1px;
     font-size: 14px;
 
 
 }
+
+
 
 .lista ul {
     font-family: "Poppins", sans-serif;
@@ -61,11 +74,10 @@ body {
     color: #3b0032;
 }
 
-.cardapio {
-    text-align: right;
-}
 
-.cardapio ul {
+
+
+.acai ul {
     border-radius: 4px;
     background-color: #ebeaa9;
     flex-wrap: wrap;
@@ -78,37 +90,37 @@ body {
 
 }
 
-.cardapio ul li {
+.acai ul li {
 
     padding: 10px;
 
 }
 
-.cardapio ul li a {
+.acai ul li a {
 
     text-transform: uppercase;
     letter-spacing: 1px;
 
 }
 
-
-.img-cardapio {
+.div-acai {
     display: flex;
     justify-content: space-around;
     text-align: center;
+    background-color: var(--cor-primaria);
 
 }
 
-.img-cardapio img {
+.div-acai img {
     width: 150px;
     padding-top: 20px;
 
 }
 
-.cardapio .price-acai {
+.acai .price-acai {
     margin-top: 50%;
     border: solid #ebeaa9 2px;
-    background-color: #3b0032;
+    background-color: var(--cor-quartenaria);
     color: #ebeaa9;
     letter-spacing: 1px;
     padding: 5px;
@@ -118,7 +130,7 @@ body {
 
 }
 
-.img-cardapio .price-acai a{
+.div-acai .price-acai a {
     letter-spacing: 2px;
     text-align: center;
     padding: 2px;
@@ -127,31 +139,227 @@ body {
     font-weight: 400;
     font-style: normal;
     color: white;
-    -webkit-text-stroke:  black 1px;
+    -webkit-text-stroke: black 1px;
 }
-.cardapio .p-acai {
+
+main .acai .p-acai {
     padding: 2px;
     border-top: solid #ebeaa9 1px;
     border-bottom: solid #ebeaa9 1px;
     text-align: center;
     font-family: "Poppins", sans-serif;
-    background-color: #7d2948;
+    background-color: var(--cor-secundaria);
     color: white;
     letter-spacing: 1px;
 }
 
-.cardapio .p-acai a {
+.acai .p-acai a {
     color: aliceblue;
     text-decoration: none;
 
 }
 
-.cardapio .p-acai p{
+.acai .p-acai p {
     font-size: 12px;
 }
 
+
+
+
+.sorvetes{
+    background-color: var(--cor-primaria);
+}
+
+.sorvetes ul {
+    border-radius: 4px;
+    background-color: #ebeaa9;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    border-bottom: solid #7d2948;
+    border-top: solid #7d2948;
+
+
+}
+
+.sorvetes ul li {
+
+    padding: 10px;
+
+}
+
+.sorvetes ul li a {
+
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+}
+
+.div-sorvete {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+
+}
+
+.div-sorvete img {
+    width: 150px;
+    padding-top: 20px;
+
+}
+
+.sorvetes .price-sorvete {
+    margin-top: 50%;
+    border: solid #ebeaa9 2px;
+    background-color: var(--cor-quartenaria);
+    color: #ebeaa9;
+    letter-spacing: 1px;
+    padding: 5px;
+    border-radius: 12px;
+    width: 110px;
+    text-transform: uppercase;
+
+}
+
+.div-sorvete .price-sorvete a {
+    letter-spacing: 2px;
+    text-align: center;
+    padding: 2px;
+    margin-top: 3px;
+    font-family: "Bowlby One SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    -webkit-text-stroke: black 1px;
+}
+
+.sorvetes .p-sorvete {
+    padding: 2px;
+    border-top: solid #ebeaa9 1px;
+    border-bottom: solid #ebeaa9 1px;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    background-color: var(--cor-secundaria);
+    color: white;
+    letter-spacing: 1px;
+}
+
+.sorvetes .p-sorvete a {
+    color: aliceblue;
+    text-decoration: none;
+
+}
+
+.sorvetes .p-sorvete p {
+    font-size: 12px;
+}
+
+
+
+
+.pizzas{
+    background-color: #ebeaa9;
+}
+
+.pizzas ul {
+    border-radius: 4px;
+    background-color: #ebeaa9;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    border-bottom: solid #7d2948;
+    border-top: solid #7d2948;
+
+
+}
+
+.pizzas ul li {
+
+    padding: 10px;
+
+}
+
+.pizzas ul li a {
+
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+}
+
+
+.div-pizza {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    background-color: var(--cor-primaria);
+
+}
+
+.div-pizza img {
+    width: 150px;
+    padding-top: 20px;
+
+}
+
+.pizzas .price-pizza {
+    margin-top: 50%;
+    border: solid #ebeaa9 2px;
+    background-color: var(--cor-quartenaria);
+    color: #ebeaa9;
+    letter-spacing: 1px;
+    padding: 5px;
+    border-radius: 12px;
+    width: 110px;
+    text-transform: uppercase;
+
+}
+
+.div-pizza .price-pizza a {
+    letter-spacing: 2px;
+    text-align: center;
+    padding: 2px;
+    margin-top: 3px;
+    font-family: "Bowlby One SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    -webkit-text-stroke: black 1px;
+}
+
+.pizzas .p-pizza {
+    padding: 2px;
+    border-top: solid #ebeaa9 1px;
+    border-bottom: solid #ebeaa9 1px;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    background-color: var(--cor-secundaria);
+    color: white;
+    letter-spacing: 1px;
+}
+
+.pizzas .p-pizza a {
+    color: aliceblue;
+    text-decoration: none;
+
+}
+
+.pizzas .p-pizza p {
+    font-size: 12px;
+}
+
+
+
+
+
+
+
+
+
+
 .footer-divs {
-    background-color: #3b0032;
+    background-color: var(--cor-terciaria);
     display: flex;
     align-items: center;
 }

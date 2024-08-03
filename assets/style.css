@@ -3,16 +3,19 @@
 
 
 
-:root{
-    --cor-primaria: #002c2b;
-    --cor-secundaria:#ff3d00;
-    --cor-terciaria: #ffbc11;
-    --cor-quartenaria: #0a837f;
+:root {
+    --cor-primaria: #213435;
+    --cor-secundaria: #46685b;
+    --cor-terciaria: #648a64;
+    --cor-quartenaria: #a6b985;
 }
+
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+
 }
 
 body {
@@ -28,7 +31,9 @@ body {
 }
 
 
-
+.display-hidden {
+    margin-top: 15px;
+}
 
 .inicio {
     display: flex;
@@ -43,8 +48,6 @@ body {
 
 }
 
-
-
 .lista ul {
     font-family: "Poppins", sans-serif;
     font-weight: 500;
@@ -58,10 +61,11 @@ body {
     padding: 5px;
     list-style: none;
     overflow-x: auto;
+    height: 50px;
 }
 
 .lista ul li a {
-    padding: 2px;
+    padding: 12px;
     color: #7d2948;
     text-decoration: none;
     text-transform: uppercase;
@@ -75,7 +79,16 @@ body {
 }
 
 
-
+.acai #titulo-acai{
+    background-color: #3b0032;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-shadow: 0px 3px 30px  var(--cor-terciaria);
+}
 
 .acai ul {
     border-radius: 4px;
@@ -139,7 +152,7 @@ body {
     font-weight: 400;
     font-style: normal;
     color: white;
-    -webkit-text-stroke: black 1px;
+    text-decoration: none;
 }
 
 main .acai .p-acai {
@@ -166,7 +179,7 @@ main .acai .p-acai {
 
 
 
-.sorvetes{
+.sorvetes {
     background-color: var(--cor-primaria);
 }
 
@@ -258,7 +271,7 @@ main .acai .p-acai {
 
 
 
-.pizzas{
+.pizzas {
     background-color: #ebeaa9;
 }
 
@@ -293,8 +306,7 @@ main .acai .p-acai {
     display: flex;
     justify-content: space-around;
     text-align: center;
-    background-color: var(--cor-primaria);
-
+    background-color: var(--cor-secundaria);
 }
 
 .div-pizza img {
@@ -377,9 +389,25 @@ main .acai .p-acai {
 
 }
 
+
+.alerta {
+    text-align: center;
+    display: none;
+}
+
+
+
 @media (min-width: 800px) {
     .display-hidden {
         display: none;
+    }
+
+
+}
+
+@media (min-width: 800px) {
+    .alerta {
+        display: contents ;
     }
 
 
